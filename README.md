@@ -42,3 +42,9 @@ int main() {
 * g++-10
 
 
+## Usage
+
+* cd alkanes
+* mkdir build && cd build
+* cmake ..
+* make
