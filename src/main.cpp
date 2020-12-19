@@ -2,10 +2,10 @@
 
 #include "conformations.h"
 
-// using namespace Alkanes;
+using namespace Alkanes;
 
 int main() {
-  constexpr int N = 6; // carbon atoms 
+  constexpr int N = 6; // carbon atoms
   All_conformations Cn(N);
   auto fut = Cn.conformations(); // coroutine handle
   // A -- anti
