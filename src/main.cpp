@@ -1,21 +1,11 @@
-# Alkanes
-Conformation generator library.
-
-## Overview
-![C5](img/c5.png)
-
-Generates all physically valid conformations for a given n-alkane.
-
-## Example
-```cpp
 #include <iostream>
 
 #include "conformations.h"
 
-using namespace Alkanes;
+// using namespace Alkanes;
 
 int main() {
-  constexpr int N = 3; // carbon atoms 
+  constexpr int N = 6; // carbon atoms 
   All_conformations Cn(N);
   auto fut = Cn.conformations(); // coroutine handle
   // A -- anti
@@ -35,10 +25,3 @@ int main() {
 
   return 0;
 }
-```
-
-## Requirements
-
-* g++-10
-
-
